@@ -3,13 +3,13 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
             xmlns:gap = "http://phonegap.com/ns/1.0"
-            id        = "com.premii.tiddlynotes"
-            versionCode = "2"
-            version   = "1.0.4">
+            id        = "com.premii.hn"
+            versionCode = "1"
+            version   = "0.0.1">
 
-    <name>Tiddly Notes</name>
+    <name>Hacker News Webapp</name>
     <description>
-        Tiddly Notes
+        Hacker news webapp
     </description>
 
     <author href="http://premii.com" email="support@premii.com">
