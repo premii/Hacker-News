@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name = "format-detection" content = "telephone=no"/>
+
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <title>Hacker News WebApp</title>
+        <style>
+            body {
+                font-family: thonburi, HelveticaNeue-Light;
+                font-size: 16px;
+            }
+            .touch {height: 0; width: 0; overflow: hidden; opacity: 0; 
+
+                -webkit-transition: all 400 ease-in;
+            }
+
+            .show-touch .touch {
+                height: auto;
+                width: auto;
+                opacity: 1;
+            }
+        </style>
+        <script type="text/javascript" src="phonegap.js"></script>
+
+    </head>
+    <body>
+        <div class="touch">
+        </div>
+        <script type="text/javascript">
+		    var onError = function (message, jsurl, lineNumber) {
+		        //save error and send to server for example.
+		        var img = new window.Image();
+		        img.src = 'http://www.premii.com/log/error.php?apikey={apikey}&pageurl={pageurl}&linenumber={linenumber}&message={message}&js={jsurl}&t={t}'
+		            .replace("{jsurl}", encodeURIComponent(jsurl))
+		            .replace("{linenumber}", lineNumber)
+		            .replace('{pageurl}', window.location.href)
+		            .replace("{message}", encodeURIComponent(message))
+		            .replace("{apikey}", 'premii.com/phonegap')
+		            .replace("{t}", +new Date());
+		        return false;
+		    };
+
+   			window.onerror = onError;
+
+			var app = {
+			    initialize: function() {
+			        this.bind();
+			    },
+			    bind: function() {
+			        document.addEventListener('deviceready', this.deviceready, false);
+			    },
+			    deviceready: function() {
+			        location.href = 'http://www.premii.com/hn/';
+			    },
+			    showTouch: function() {
+			        document.body.className = 'show-touch';
+			    }
+			};
+            app.initialize();
+
+        </script>
+    </body>
+</html>
