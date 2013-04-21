@@ -7,7 +7,7 @@
             versionCode = "1"
             version   = "0.0.1">
 
-    <name>Hacker News Webapp</name>
+    <name>Hacker News</name>
     <description>
         Hacker news webapp
     </description>
@@ -76,7 +76,7 @@
     <gap:splash src="res/screen/ios/splash@2x-640x960.png"      gap:platform="ios" width="640"  height="960" />
     <gap:splash src="res/screen/ios/splash@2x-640x1136.png"     gap:platform="ios" width="640"  height="1136" />
     <gap:splash src="res/screen/ios/splash-ipad-768x1004.png"   gap:platform="ios" width="768"  height="1004" />
-    <gap:splash src="res/screen/ios/splash-ipad-1024x748.png"   gap:platform="ios" width="1004" height="768" />
+    <gap:splash src="res/screen/ios/splash-ipad-1024x748.png"   gap:platform="ios" width="1024" height="748" />
     <!--
         Define access to external domains.
 
