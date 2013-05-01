@@ -1,0 +1,76 @@
+
+
+.show-loading .circle {
+    border-color: #444 #777;
+    box-shadow: 0 0 5px #444 inset, 0 0 5px #777;
+}
+.header .submenu {
+    background: #282828;
+}
+body {
+    background: #222;
+    color: #999;
+}
+.header h1 {
+    color: rgba(255,255,255,0.3);
+}
+
+.header .icon {
+    background: rgba(255,255,255,0.04);
+    color: rgba(255,255,255,0.2);
+}
+.pages-container .pagebd-container {
+    background: #111;
+}
+a,
+.article-comments .author,
+.page-home .bd .comments {
+    color: #69c;
+}
+
+.page-home .bd li {
+    border-bottom: 1px solid  rgba(255,255,255,.07);
+}
+.page-home .bd .comments {
+    background: rgba(255,255,255,0.031);
+}
+.header a {
+    color: #888;
+}
+
+.article-meta h3,
+.page-home .bd h3 {
+    color: #aaa;
+}
+
+.page-home .bd .points {
+    background: rgba(255,255,255,0.031);
+}
+
+.page-home .bd a {
+    color: #777;
+}
+
+.page-article-content .article-content {
+    background: rgba(255,255,255,0.05);
+}
+
+.article-comments {
+    background: rgba(255,255,255,0.05);
+}
+
+.article-comments li {
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+.article-comments ul ul {
+    border-left: 15px solid rgba(255,255,255,0.03);
+}
+.article-comments ul ul ul{
+    border-color: rgba(255,255,255,0.05);
+}
+.article-comments ul ul ul ul {
+    border-color: rgba(255,255,255,0.07);
+}
+.article-comments ul ul ul ul ul {
+    border-color: rgba(255,255,255,0.9);
+}
