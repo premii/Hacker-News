@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <script>t0=+new Date();</script>
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+          content="initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-touch-fullscreen" content="YES"/>
@@ -21,16 +21,14 @@
             padding:0;
             background: #ff6600;
         }
-
     </style>
 
-    <link rel="stylesheet" href="a/fonts/stylesheet.css" type="text/css" charset="utf-8">
+    
 
-    <link href="a/glyph/hn/style.css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="a/css/touch.css?t=1367370413227">
-
-
+    <script src="phonegap.js?t=1367468330209"></script>
+<link rel="stylesheet" type="text/css" href="a/fonts/stylesheet.css?t=1367468330209">
+<link rel="stylesheet" type="text/css" href="a/glyph/hn/style.css?t=1367468330209">
+<link rel="stylesheet" type="text/css" href="a/css/touch.css?t=1367468330209">
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="a/icon/ios/Icon-72@2x.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="a/icon/ios/Icon@2x.png">
@@ -54,9 +52,9 @@
                                 <li><a href="#" class="filter-fp">Hacker News</a></li>
                                 <li><a href="#" class="filter-ask-hn">Ask HN</a></li>
                                 <li><a href="#" class="filter-show-hn">Show HN</a></li>
-                                <li><a href="#" class="filter-today-top-10">Top 10 (today)</a></li>
+                                <li><a href="#" class="filter-today-top-10">Top 10 (Today)</a></li>
                                 <li><a href="#" class="filter-yesterday-top-10">Top 10 (Yesterday)</a></li>
-                                <li><a href="#" class="filter-week-top-10">Top 10 (Week)</a></li>
+                                <li><a href="#" class="filter-week-top-10">Top 10 (Last 7 days)</a></li>
                                 <li><a href="#" class="show-performance">Performance</a></li>
                             </ul>
                         </li>
@@ -246,6 +244,7 @@
 
 
 <script type="text/javascript">
+
     (function(global){
         global.apiData = null;
         global.apiCallback = function(data) {
@@ -325,7 +324,7 @@
 </script>
 
 
-<script src="a/js/prod.js?t=1367370413226"></script>
+<script src="a/js/prod.js?t=1367468330209"></script>
 
 
 
